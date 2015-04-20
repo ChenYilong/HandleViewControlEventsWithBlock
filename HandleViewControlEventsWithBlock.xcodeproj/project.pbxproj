@@ -10,10 +10,11 @@
 		9A1108361AE56472002BB6F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1108351AE56472002BB6F5 /* main.m */; };
 		9A1108391AE56472002BB6F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1108381AE56472002BB6F5 /* AppDelegate.m */; };
 		9A11083C1AE56472002BB6F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11083B1AE56472002BB6F5 /* ViewController.m */; };
-		9A11083F1AE56472002BB6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A11083D1AE56472002BB6F5 /* Main.storyboard */; };
 		9A1108411AE56472002BB6F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1108401AE56472002BB6F5 /* Images.xcassets */; };
 		9A1108441AE56472002BB6F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1108421AE56472002BB6F5 /* LaunchScreen.xib */; };
 		9A1108501AE56472002BB6F5 /* HandleViewControlEventsWithBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11084F1AE56472002BB6F5 /* HandleViewControlEventsWithBlockTests.m */; };
+		9A1108601AE56781002BB6F5 /* UIView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11085F1AE56781002BB6F5 /* UIView+Block.m */; };
+		9A1108631AE56BAF002BB6F5 /* UIImage+ResizeImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1108621AE56BAF002BB6F5 /* UIImage+ResizeImg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,15 @@
 		9A1108381AE56472002BB6F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A11083A1AE56472002BB6F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9A11083B1AE56472002BB6F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9A11083E1AE56472002BB6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A1108401AE56472002BB6F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A1108431AE56472002BB6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A1108491AE56472002BB6F5 /* HandleViewControlEventsWithBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandleViewControlEventsWithBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A11084E1AE56472002BB6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A11084F1AE56472002BB6F5 /* HandleViewControlEventsWithBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleViewControlEventsWithBlockTests.m; sourceTree = "<group>"; };
+		9A11085E1AE56781002BB6F5 /* UIView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Block.h"; sourceTree = "<group>"; };
+		9A11085F1AE56781002BB6F5 /* UIView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Block.m"; sourceTree = "<group>"; };
+		9A1108611AE56BAF002BB6F5 /* UIImage+ResizeImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImg.h"; sourceTree = "<group>"; };
+		9A1108621AE56BAF002BB6F5 /* UIImage+ResizeImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImg.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,13 @@
 		9A1108321AE56472002BB6F5 /* HandleViewControlEventsWithBlock */ = {
 			isa = PBXGroup;
 			children = (
+				9A11085D1AE56758002BB6F5 /* UIView+Block */,
 				9A1108371AE56472002BB6F5 /* AppDelegate.h */,
 				9A1108381AE56472002BB6F5 /* AppDelegate.m */,
 				9A11083A1AE56472002BB6F5 /* ViewController.h */,
 				9A11083B1AE56472002BB6F5 /* ViewController.m */,
-				9A11083D1AE56472002BB6F5 /* Main.storyboard */,
+				9A1108611AE56BAF002BB6F5 /* UIImage+ResizeImg.h */,
+				9A1108621AE56BAF002BB6F5 /* UIImage+ResizeImg.m */,
 				9A1108401AE56472002BB6F5 /* Images.xcassets */,
 				9A1108421AE56472002BB6F5 /* LaunchScreen.xib */,
 				9A1108331AE56472002BB6F5 /* Supporting Files */,
@@ -117,6 +123,15 @@
 				9A11084E1AE56472002BB6F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A11085D1AE56758002BB6F5 /* UIView+Block */ = {
+			isa = PBXGroup;
+			children = (
+				9A11085E1AE56781002BB6F5 /* UIView+Block.h */,
+				9A11085F1AE56781002BB6F5 /* UIView+Block.m */,
+			);
+			path = "UIView+Block";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A11083F1AE56472002BB6F5 /* Main.storyboard in Resources */,
 				9A1108441AE56472002BB6F5 /* LaunchScreen.xib in Resources */,
 				9A1108411AE56472002BB6F5 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1108601AE56781002BB6F5 /* UIView+Block.m in Sources */,
 				9A11083C1AE56472002BB6F5 /* ViewController.m in Sources */,
+				9A1108631AE56BAF002BB6F5 /* UIImage+ResizeImg.m in Sources */,
 				9A1108391AE56472002BB6F5 /* AppDelegate.m in Sources */,
 				9A1108361AE56472002BB6F5 /* main.m in Sources */,
 			);
@@ -244,14 +260,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A11083D1AE56472002BB6F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A11083E1AE56472002BB6F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A1108421AE56472002BB6F5 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HandleViewControlEventsWithBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HandleViewControlEventsWithBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
